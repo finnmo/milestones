@@ -1,0 +1,67 @@
+/* datepicker-overrides.css */
+
+/* Hide the default month-year text (since we use a custom header) */
+.react-datepicker__current-month {
+  display: none !important;
+}
+
+/* Hide built-in month/year dropdowns if you enable them in code */
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown {
+  display: none !important;
+}
+
+/* Subtle styling for the datepicker container */
+.react-datepicker {
+  background-color: #fff;
+  border: 1px solid #e2e8f0; /* gray-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  color: #374151; /* gray-700 */
+}
+
+/* The custom header container area */
+.react-datepicker__header {
+  background-color: #f9fafb; /* gray-50 */
+  border-bottom: 1px solid #e5e7eb; /* gray-200 */
+  padding-top: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Days in the calendar grid */
+.react-datepicker__day {
+  width: 2rem;
+  line-height: 2rem;
+  margin: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.react-datepicker__day:hover {
+  background-color: #e5e7eb; /* gray-200 */
+}
+
+/* Selected day highlight */
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #3b82f6; /* blue-500 */
+  color: #fff;
+}
+
+/* Today highlight */
+.react-datepicker__day--today {
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+  border-bottom: 2px solid #3b82f6; 
+}
+
+/* Out-of-month days (empty squares) */
+.react-datepicker__day--outside-month {
+  opacity: 0.4;
+  cursor: default;
+}
