@@ -9,13 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@internationalized/date": "^3.7.0",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.4.3",
     "next": "15.1.7",
     "nprogress": "^0.2.0",
     "react": "^19.0.0",
-    "react-aria-components": "^1.6.0",
     "react-calendar": "^5.1.0",
     "react-datepicker": "^8.0.0",
     "react-dom": "^19.0.0"
